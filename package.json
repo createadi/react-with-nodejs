@@ -8,13 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server/index.js",
     "frontend": "cd ./client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+    "dev": "concurrently \"nodemon server\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^7.2.1",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
   }
 }
